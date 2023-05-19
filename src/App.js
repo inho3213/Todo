@@ -12,7 +12,7 @@ const App = () => {
     {
       id: 2,
       text: "할일2",
-      checked: true,
+      checked: false,
     },
     {
       id: 3,
@@ -22,7 +22,7 @@ const App = () => {
   ]);
 
   return (
-    <Template>
+    <Template todoLength={todos.length}>
       <TodoList todos={todos} />
     </Template>
   );
